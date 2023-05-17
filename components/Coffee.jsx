@@ -53,7 +53,7 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: auto;
-    padding: 100px;
+    padding: 100px 0px;
   }
 `;
 

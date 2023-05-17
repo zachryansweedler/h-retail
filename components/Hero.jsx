@@ -34,6 +34,9 @@ const Grid = styled.div`
   height: 100vh;
   min-height: -webkit-fill-available;
   overflow: hidden;
+  @media screen and (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const Left = styled.div`
@@ -46,6 +49,10 @@ const Left = styled.div`
   z-index: 100;
   padding: 30px;
   gap: 15px;
+  @media screen and (max-width: 760px) {
+    position: relative;
+    height: 50vh;
+  }
 `;
 
 const Right = styled.div`
@@ -54,6 +61,11 @@ const Right = styled.div`
   overflow: hidden;
   position: relative;
   grid-column: 2;
+  @media screen and (max-width: 760px) {
+    position: relative;
+    height: 50vh;
+    grid-column: 1;
+  }
 `;
 
 const HeroHead = styled.h1`
