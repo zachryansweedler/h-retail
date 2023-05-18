@@ -92,8 +92,8 @@ const ImageContainer = styled.div`
   }
   @media screen and (max-width: 460px) {
     & > img {
-      width: 500px !important;
-      height: 500px !important;
+      width: 450px !important;
+      height: 450px !important;
       transform: translateX(-250px) translateY(-200px) !important;
     }
   }
