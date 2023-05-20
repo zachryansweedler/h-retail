@@ -12,8 +12,10 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <GlobalStyles/>
-        <Nav/>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <Nav/>
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
   );
