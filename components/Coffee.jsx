@@ -9,28 +9,12 @@ function Coffee() {
   return (
     <Wrapper>
       <TextWrapper>
-        <p>Ready?</p>
+        <p style={{ color: "#ffffff" }}>Ready?</p>
         <BigTextWrapper>
-          <BigText>Let&apos;s Get</BigText>
-          <BigText style={{ color: "#492B00" }}>Coffee</BigText>
+          <BigText style={{ color: "#ffffff" }}>Let&apos;s Chat</BigText>
         </BigTextWrapper>
-        <Button brown>Start Your Journey</Button>
+        <Button black>Contact Sales</Button>
       </TextWrapper>
-      <ImageContainer>
-        <Image
-          id="coffee-cup"
-          src="/coffee-cup.png"
-          alt=""
-          width='700'
-          height='700'
-          style={{
-            position: "absolute",
-            top: '0',
-            left: '0',
-            transform: 'translateX(-200px) translateY(-200px)'
-          }}
-        />
-      </ImageContainer>
     </Wrapper>
   );
 }
@@ -45,7 +29,7 @@ const Wrapper = styled.div`
   height: 600px;
   justify-content: center;
   gap: 30px;
-  background-color: #faf6ef;
+  background-color: #2797DF;
   position: relative;
   overflow: hidden;
   width: 100vw;

@@ -8,14 +8,14 @@ function Hero() {
   return (
     <Grid>
       <Left>
-        <Button grey>Start Your Journey</Button>
+        <Button grey>Contact Sales</Button>
         <HeroHead>
-          Retail<br/>Solutions
+          Loyalty<br/>Solutions
         </HeroHead>
       </Left>
       <Right>
         <Image
-          src="/hero.jpg"
+          src="/hero_image.jpg"
           alt=""
           fill="true"
           style={{ objectFit: "cover" }}

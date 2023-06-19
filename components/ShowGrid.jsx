@@ -29,16 +29,16 @@ function ShowGrid() {
   return (
     <Wrapper>
       <GridTop id='grid-top'>
-        <GridItem><Image src='/1.jpeg' alt='' fill='true' style={{objectFit: 'cover', width: '100%', height: '100%'}}/></GridItem>
-        <GridItem hideMobile><Image src='/2.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideTablet><Image src='/3.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideMobile><Image src='/4.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem><Image src='/1.svg' alt='' fill='true' style={{objectFit: 'cover', width: '100%', height: '100%'}}/></GridItem>
+        <GridItem hideMobile><Image src='/2.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem hideTablet><Image src='/3.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem hideMobile><Image src='/4.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
       </GridTop>
       <GridBottom id='grid-bottom'>
-        <GridItem><Image src='/5.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideMobile><Image src='/6.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideTablet><Image src='/7.webp' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
-        <GridItem hideMobile><Image src='/8.jpg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
+        <GridItem><Image src='/5.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem hideMobile><Image src='/6.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem hideTablet><Image src='/7.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
+        <GridItem hideMobile><Image src='/8.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
       </GridBottom>
     </Wrapper>
   );
@@ -61,10 +61,10 @@ const GridTop = styled.div`
   column-gap: 30px;
   margin-bottom: 30px;
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
+     display: none;
   }
   @media screen and (max-width: 760px) {
-    grid-template-columns: 1fr 1fr;
+    display: none;
   }
 `;
 
@@ -75,10 +75,10 @@ const GridBottom = styled.div`
   height: 32vh;
   column-gap: 30px;
   @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    display: none;
   }
   @media screen and (max-width: 760px) {
-    grid-template-columns: 1fr 1fr;
+    display: none;
   }
 `;
 

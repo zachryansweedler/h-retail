@@ -5,51 +5,50 @@ import { Button } from "./Button";
 import Image from "next/image";
 
 function About() {
-    useEffect(() => {
-        // Function to handle scroll event
-        const handleScroll = () => {
-          const scrollTop = window.pageXOffset || document.documentElement.scrollTop;
-          // Get the GridTop and GridBottom elements
-          const aboutImage = document.getElementById("about-image");
-          // Apply translations based on scroll position
-          if (aboutImage) {
-            const initialScale = 2; // Set the initial scale (regular size)
-            const scale = Math.max(initialScale - scrollTop / 5000, 1); // Adjust the scaling factor and set a minimum scale of 0
-            aboutImage.style.transform = `scale(${scale})`;
-          }
-        };
-        // Add scroll event listener
-        window.addEventListener("scroll", handleScroll);
-        // Clean up scroll event listener on component unmount
-        return () => {
-          window.removeEventListener("scroll", handleScroll);
-        };
-      }, []);
+  useEffect(() => {
+    // Function to handle scroll event
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageXOffset || document.documentElement.scrollTop;
+      // Get the GridTop and GridBottom elements
+      const aboutImage = document.getElementById("about-image");
+      // Apply translations based on scroll position
+      if (aboutImage) {
+        const initialScale = 2; // Set the initial scale (regular size)
+        const scale = Math.max(initialScale - scrollTop / 5000, 1); // Adjust the scaling factor and set a minimum scale of 0
+        aboutImage.style.transform = `scale(${scale})`;
+      }
+    };
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+    // Clean up scroll event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <Grid>
       <Left>
         <p>About</p>
-        {/* <Image src="/retailconf.svg" alt="" width="500" height="256" /> */}
         <HeadWrap>
           <H1>Beyond</H1>
-          <H1>Shopping.</H1>
+          <H1>Loyalty.</H1>
         </HeadWrap>
         <p>
-          We specialize in designing and creating exceptional retail experiences
-          for distinguished consumer brands. With a focus on delivering unique
-          and memorable interactions, the company aims to elevate the retail
-          environment and help brands stand out in the competitive market. By
-          blending creative design, strategic planning, and innovative
-          technologies, the company helps consumer brands create meaningful
-          connections with their target audience, enhance brand loyalty, and
-          ultimately drive business success in the retail industry.
+          H Loyalty Solutions is a cutting-edge Software-as-a-Service (SaaS) business that specializes in
+          providing comprehensive loyalty system solutions to businesses of all
+          sizes and industries. With a focus on enhancing customer engagement,
+          retention, and brand loyalty, LoyaltyXpert offers a suite of powerful
+          tools and features to help businesses create, manage, and optimize
+          their loyalty programs.
         </p>
         <Button black>Start Your Journey</Button>
       </Left>
       <Right>
         <Image
-          id='about-image'
-          src="/about.jpg"
+          id="about-image"
+          src="/about_image.jpeg"
           alt=""
           fill="true"
           style={{ objectFit: "cover" }}

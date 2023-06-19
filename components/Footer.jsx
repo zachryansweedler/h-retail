@@ -22,7 +22,7 @@ function Footer() {
           <p>Team</p>
           <p>Enterprise</p>
           <p>Customer Stories</p>
-          <p>The ReadME Project</p>
+          <p>The ReadMe Project</p>
           <p>Pricing</p>
           <p>Resources</p>
         </FooterColumn>
