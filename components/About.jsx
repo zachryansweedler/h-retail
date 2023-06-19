@@ -48,7 +48,7 @@ function About() {
       <Right>
         <Image
           id="about-image"
-          src="/about_image.jpeg"
+          src="/about_image1.jpg"
           alt=""
           fill="true"
           style={{ objectFit: "cover" }}

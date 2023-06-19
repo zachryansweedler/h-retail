@@ -7,7 +7,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head>
-        <title>H RETAIL</title>
+        <title>H LOYALTY</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
