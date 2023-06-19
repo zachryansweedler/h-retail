@@ -9,7 +9,7 @@ function Coffee() {
   return (
     <Wrapper>
       <TextWrapper>
-        <p style={{ color: "#ffffff" }}>Ready?</p>
+        <h3 style={{ color: "#ffffff" }}>Ready?</h3>
         <BigTextWrapper>
           <BigText style={{ color: "#ffffff" }}>Let&apos;s Chat</BigText>
         </BigTextWrapper>

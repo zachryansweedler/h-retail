@@ -30,7 +30,7 @@ function About() {
   return (
     <Grid>
       <Left>
-        <p>About</p>
+        <h3>About</h3>
         <HeadWrap>
           <H1>Beyond</H1>
           <H1>Loyalty.</H1>

@@ -1,5 +1,6 @@
 'use client';
 import About from "@/components/About";
+import About2 from "@/components/About2";
 import Coffee from "@/components/Coffee";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero/>
       <ShowGrid/>
       <About/>
+      <About2/>
       <Coffee/>
       <Footer/>
     </div>
