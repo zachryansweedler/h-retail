@@ -12,7 +12,7 @@ function Nav() {
   return (
     <Wrapper>
         <Link href="/"><h1 onClick={scrollToTop}>H</h1></Link>
-        <Button black>Contact Sales</Button>
+        <Link  href="/contact"><Button black>Contact Sales</Button></Link>
     </Wrapper>
   )
 }

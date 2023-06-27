@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 function About2() {
   useEffect(() => {
@@ -50,7 +51,7 @@ function About2() {
           white label loyalty system service, empowering businesses to create
           loyalty programs that reflect their unique brand image and values.
         </p>
-        <Button black>Contact Sales</Button>
+        <Link href="/contact"><Button black>Contact Sales</Button></Link>
       </Left>
     </Grid>
   );
@@ -63,7 +64,7 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 100vw;
   column-gap: 30px;
-  padding: 0px 30px 0px;
+  padding: 0px 30px 30px;
   overflow: hidden;
   @media screen and (max-width: 1000px) {
     display: flex;

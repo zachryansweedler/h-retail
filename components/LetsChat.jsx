@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import Image from "next/image";
+import Link from "next/link";
 
-function Coffee() {
+function LetsChat() {
 
   return (
     <Wrapper>
@@ -13,13 +13,13 @@ function Coffee() {
         <BigTextWrapper>
           <BigText style={{ color: "#ffffff" }}>Let&apos;s Chat</BigText>
         </BigTextWrapper>
-        <Button black>Contact Sales</Button>
+        <Link href="/contact"><Button black>Contact Sales</Button></Link>
       </TextWrapper>
     </Wrapper>
   );
 }
 
-export default Coffee;
+export default LetsChat;
 
 const Wrapper = styled.div`
   height: auto;

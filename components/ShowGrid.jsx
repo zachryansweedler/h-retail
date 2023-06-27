@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 
 function ShowGrid() {
+  
   useEffect(() => {
     // Function to handle scroll event
     const handleScroll = () => {
@@ -26,6 +27,7 @@ function ShowGrid() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <Wrapper>
       <h1 style={{marginBottom: "60px"}}>Our Clients</h1>

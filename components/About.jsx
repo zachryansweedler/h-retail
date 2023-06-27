@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 
 function About() {
   useEffect(() => {
@@ -43,7 +44,7 @@ function About() {
           tools and features to help businesses create, manage, and optimize
           their loyalty programs.
         </p>
-        <Button black>Start Your Journey</Button>
+        <Link href="/contact"><Button black>Contact Sales</Button></Link>
       </Left>
       <Right>
         <Image
