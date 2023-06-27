@@ -28,17 +28,18 @@ function ShowGrid() {
   }, []);
   return (
     <Wrapper>
+      <h1 style={{marginBottom: "60px"}}>Our Clients</h1>
       <GridTop id='grid-top'>
-        <GridItem><Image src='/1.svg' alt='' fill='true' style={{objectFit: 'cover', width: '100%', height: '100%'}}/></GridItem>
-        <GridItem hideMobile><Image src='/2.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideTablet><Image src='/3.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideMobile><Image src='/4.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
+        <GridItem><Image src='/logo1.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
+        <GridItem hideMobile><Image src='/logo2.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
+        <GridItem hideTablet><Image src='/logo3.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
+        <GridItem hideMobile><Image src='/logo4.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
       </GridTop>
       <GridBottom id='grid-bottom'>
-        <GridItem><Image src='/5.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideMobile><Image src='/6.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem>
-        <GridItem hideTablet><Image src='/7.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
-        <GridItem hideMobile><Image src='/8.svg' alt='' fill='true' style={{objectFit: 'cover'}}/></GridItem> 
+        <GridItem><Image src='/logo5.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
+        <GridItem hideMobile><Image src='/logo6.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem>
+        <GridItem hideTablet><Image src='/logo7.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem> 
+        <GridItem hideMobile><Image src='/logo8.svg' alt='' fill='true' style={{objectFit: 'contain'}}/></GridItem> 
       </GridBottom>
     </Wrapper>
   );
@@ -47,18 +48,24 @@ function ShowGrid() {
 export default ShowGrid;
 
 const Wrapper = styled.div`
-    height: auto;
+    height: 500px;
     width: 100vw;
     overflow: hidden;
-    margin: 30px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+    @media screen and (max-width: 1000px) {
+     display: none;
+  }
 `;
 
 const GridTop = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
-  height: 32vh;
-  column-gap: 30px;
+  height: 250px;
+  grid-gap: 160px;
   margin-bottom: 30px;
   @media screen and (max-width: 1000px) {
      display: none;
@@ -72,8 +79,8 @@ const GridBottom = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 100%;
-  height: 32vh;
-  column-gap: 30px;
+  height: 250px;
+  grid-gap: 160px;
   @media screen and (max-width: 1000px) {
     display: none;
   }

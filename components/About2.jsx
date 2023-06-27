@@ -11,7 +11,7 @@ function About2() {
       const scrollTop =
         window.pageXOffset || document.documentElement.scrollTop;
       // Get the GridTop and GridBottom elements
-      const aboutImage = document.getElementById("about-image");
+      const aboutImage = document.getElementById("about-image2");
       // Apply translations based on scroll position
       if (aboutImage) {
         const initialScale = 2; // Set the initial scale (regular size)
@@ -31,8 +31,8 @@ function About2() {
     <Grid>
       <Right>
         <Image
-          id="about-image"
-          src="/about2.png"
+          id="about-image2"
+          src="/about_2.png"
           alt=""
           fill="true"
           style={{ objectFit: "cover" }}
@@ -63,7 +63,7 @@ const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   width: 100vw;
   column-gap: 30px;
-  padding: 0px 30px 30px;
+  padding: 0px 30px 0px;
   overflow: hidden;
   @media screen and (max-width: 1000px) {
     display: flex;
