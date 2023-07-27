@@ -14,7 +14,7 @@ function Hero() {
           <br />
           Solutions
         </HeroHead>
-        <p>
+        <p style={{maxWidth: "500px"}}>
           Cutting-edge Software-as-a-Service (SaaS) business that specializes in
           providing comprehensive loyalty system solutions to businesses of all
           sizes and industries.{" "}
