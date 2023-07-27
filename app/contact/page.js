@@ -11,7 +11,13 @@ function Contact() {
 
   return (
     <div style={{ display: "flex", margin: "auto", flexDirection: "column", maxWidth: "900px", padding: "0px 30px", height: "100vh", justifyContent: "center"}}>
-      {show || <h1 style={{marginBottom: "30px"}}>Contact Us</h1>}
+      {show || 
+      <div style={{display: 'flex', flexDirection: 'column', rowGap: '5px', marginBottom: "30px"}}>
+        <h1 style={{marginBottom: '20px'}}>Contact Us</h1>
+        <p>Or email us as info@htloyalty.com.</p>
+        <p>We are located at 1209 Orange St, Wilmington, DE 19801</p>
+      </div>
+      }
       {show ? (
         <Success successMessage="Thank you for contacting our team, we'll be in touch with you shortly"/>
       ) : (
@@ -48,7 +54,7 @@ function Contact() {
                 <input type="checkbox" />
                 <label>
                   By checking this box, you agree to recieve communication from
-                  our company
+                  our company.
                 </label>
               </div>
               <button onClick={onClick}>Submit Form</button>
