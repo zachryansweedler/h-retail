@@ -43,9 +43,35 @@ export const GlobalStyles = createGlobalStyle`
         font-size: 14px;
     }
 
+    label {
+        line-height: 1.72;
+        font-size: 14px;
+    }
+
     a {
         outline: none;
         text-decoration: none;
         color: black;
+    }
+
+    input {
+        padding: 12px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+    }
+
+    input[type="checkbox"] {
+        border: 1px solid #dddddd;
+        padding: 12px;
+        line-height: 1.72;
+    }
+
+    textarea {
+        padding: 12px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        min-height: 150px;
+        height: 100%;
+        font-family: 'Poppins', sans-serif !important;
     }
 `;

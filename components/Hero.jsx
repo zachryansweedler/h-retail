@@ -3,15 +3,25 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
+import Link from "next/link";
 
 function Hero() {
   return (
     <Grid>
       <Left>
-        <Button grey>Contact Sales</Button>
         <HeroHead>
-          Loyalty<br/>Solutions
+          Loyalty
+          <br />
+          Solutions
         </HeroHead>
+        <p>
+          Cutting-edge Software-as-a-Service (SaaS) business that specializes in
+          providing comprehensive loyalty system solutions to businesses of all
+          sizes and industries.{" "}
+        </p>
+        <Link href="/contact">
+          <Button grey>Contact Sales</Button>
+        </Link>
       </Left>
       <Right>
         <Image
@@ -43,15 +53,15 @@ const Left = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: start;
-  position: absolute;
+  position: relative;
   z-index: 100;
-  padding: 30px;
-  gap: 15px;
+  padding: 160px 30px;
+  gap: 30px;
   @media screen and (max-width: 760px) {
     position: relative;
-    height: 50vh;
+    height: auto;
   }
 `;
 
@@ -69,5 +79,8 @@ const Right = styled.div`
 `;
 
 const HeroHead = styled.h1`
-  font-size: 15vw;
+  font-size: 100px;
+  @media screen and (max-width: 760px) {
+    font-size: 60px;
+  }
 `;

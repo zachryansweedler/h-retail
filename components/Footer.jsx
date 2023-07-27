@@ -1,40 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
+import Image from "next/image";
 
 function Footer() {
   return (
     <Wrapper>
       <FooterGrid>
         <FooterColumn lgGap>
-          <h1>H.</h1>
+          <Image alt="h-logo" width={40} height={40} src="/hlogo.svg"/>
           <div style={{ display: "flex", flexDirection: "column", gap: "9px" }}>
-            <h4>Subscribe to Customer Stories</h4>
-            <p>Get product updates, company news, and more.</p>
+            <p>Copyright 2023. H. Loyalty Solutions, LLC</p>
           </div>
-          <Button black>Subscribe</Button>
-        </FooterColumn>
-        <FooterColumn>
-          <p>Product</p>
-          <p>Features</p>
-          <p>Security</p>
-          <p>Product</p>
-          <p>Team</p>
-          <p>Enterprise</p>
-          <p>Customer Stories</p>
-          <p>The ReadMe Project</p>
-          <p>Pricing</p>
-          <p>Resources</p>
-        </FooterColumn>
-        <FooterColumn>
-          <p>Company</p>
-          <p>About</p>
-          <p>Blog</p>
-          <p>Careers</p>
-          <p>Press</p>
-          <p>Inclusion</p>
-          <p>Social Impact</p>
-          <p>Shop</p>
         </FooterColumn>
       </FooterGrid>
     </Wrapper>
@@ -51,8 +28,8 @@ const Wrapper = styled.div`
 `;
 
 const FooterGrid = styled.div`
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr;
+  display: flex;
+  width: 100%;
   @media screen and (max-width: 700px) {
     grid-template-columns: 1fr;
     grid-row-gap: 60px;
@@ -60,7 +37,9 @@ const FooterGrid = styled.div`
 `;
 const FooterColumn = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
   gap: ${(props) => (props.lgGap ? "30px" : "20px")};
   align-items: flex-start;
 `;
