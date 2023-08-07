@@ -24,7 +24,7 @@ function Contact() {
         <>
           <form>
             <div
-              style={{
+              style={{ 
                 display: "flex",
                 flexDirection: "column",
                 rowGap: "30px",

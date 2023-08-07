@@ -73,5 +73,6 @@ export const GlobalStyles = createGlobalStyle`
         min-height: 150px;
         height: 100%;
         font-family: 'Poppins', sans-serif !important;
+        
     }
 `;

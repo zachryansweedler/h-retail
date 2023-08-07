@@ -13,7 +13,7 @@ function Features() {
           <h3>Loyalty</h3>
           <p style={{ textAlign: "center" }}>
             Strengthen customer engagement to increase loyalty and purchase
-            frequency
+            frequency.
           </p>
         </GridItem>
         <GridItem>
@@ -21,14 +21,14 @@ function Features() {
           <h3>Rewards & Offers</h3>
           <p style={{ textAlign: "center" }}>
             Increase brand awareness by sending rewards, offers & coupons
-            directly to your customers’ phones
+            directly to your customers’ phones.
           </p>
         </GridItem>
         <GridItem>
           <Image alt="feature" src="/marketing.svg"  width="50" height="50" />
           <h3>Marketing Automation</h3>
           <p style={{ textAlign: "center" }}>
-            Our autoconnects™ feature allows your to automate your text
+            Our marketing automation feature allows your to automate your text
             marketing campaigns.
           </p>
         </GridItem>
@@ -45,16 +45,15 @@ function Features() {
           <h3>Online Ordering</h3>
           <p style={{ textAlign: "center" }}>
             Customers can place orders right from their springbig wallet through
-            integrations with every major ecommerce platform in the cannabis
-            space
+            integrations with every major ecommerce platform.
           </p>
         </GridItem>
         <GridItem>
           <Image alt="feature" src="/referral.svg" width="50" height="50" />
           <h3>Referrals</h3>
           <p style={{ textAlign: "center" }}>
-            Cannabis referral program. leverage social media with shareable,
-            trackable referral links
+            Leverage social media with shareable,
+            trackable referral links using our proprietary Referral software.
           </p>
         </GridItem>
       </Grid>
